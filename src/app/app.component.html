@@ -11,8 +11,9 @@
 </ul>
   </h1>
   <input type="file" (change)="fileChange($event)" placeholder="Upload file">
-
+<img  [src]="this._DomSanitizationService.bypassSecurityTrustUrl('data:image/*;base64,'+imgsource)">
 </div>
 
 
 <router-outlet></router-outlet>
+<!---->
